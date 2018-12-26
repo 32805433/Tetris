@@ -6,7 +6,7 @@ class Position():
         return "("+str(self.x)+", "+str(self.y)+")"
 
 class Tetrimino:
-    """Represent a single Tetrimino."""
+    """Represent a single Tetrimino"""
     SHAPE = {'I', 'J', 'L', 'O', 'S', 'T', 'Z'}
     TILES = {'I': {Position(-2,0), Position(-1,0), Position(0,0), Position(1,0)}, 
              'J': {},
@@ -45,7 +45,7 @@ class Board:
     def addtile(self, p):
         """ 
         p: Position
-        Add a tile to self at position p.
+        Add a tile to self at position p
         """
         pass
     
@@ -54,10 +54,10 @@ class Board:
         """
         b: Board
         c: int, >=0
-        Clear the full rows in b.
-        Returns a tuple (score, combo).
-        score is the score received giving that there's already c combos.
-        combo is the new quantity of combos after this process. 
+        Clear the full rows in b
+        Returns a tuple (score, combo)
+        score is the score received giving that there's already c combos
+        combo is the new quantity of combos after this process
         """
         pass
     
