@@ -1,4 +1,4 @@
-class Position():
+class Position:
     def __init__(self, x, y):
         self.x, self.y = x, y
         
@@ -48,6 +48,12 @@ class Board:
         Add a tile to self at position p
         """
         pass
+    
+    def getwidth(self):
+        return self.width
+    
+    def getheight(self):
+        return self.height
     
     @staticmethod
     def clear(b, c=0):
